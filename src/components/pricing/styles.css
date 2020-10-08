@@ -1,0 +1,85 @@
+.pricing-wrapper {
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.pricing-wrapper h2 {
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+.price-plan {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    justify-content: center;
+    text-align: left;
+    border: 1px solid rgba(61, 90, 128, 0.3);
+    border-radius: 10px;
+    padding: 0 2rem;
+}
+
+.price-plan img {
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+.price-plan ul {
+    list-style: none;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+.price {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    color: #EE6C4D;
+}
+
+.price-btn-wrapper {
+    margin: 1rem auto;
+}
+
+.price-btn-wrapper button {
+    border-radius: 6px;
+    width: 7rem;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    color: #3d5a80;
+    border: 1px solid rgba(61, 90, 128, 0.5);
+    margin-top: 2rem;
+}
+
+.price-btn-wrapper button:focus {
+    outline: none;
+}
+
+#monthly {
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+#yearly {
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+#price-subtitle {
+    font-size: 1.3rem;
+}
+
+.price-btn-wrapper button:hover,
+.price-btn-wrapper button:active,
+.price-btn-wrapper button.active{
+    color: #E0FBFC;
+    background: #3d5a80;
+}

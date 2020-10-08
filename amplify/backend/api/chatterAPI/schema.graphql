@@ -1,0 +1,9 @@
+type Guest @model {
+  id: ID!
+  name: String!
+  achievements: String!
+  topics: String!
+  filePath: String!
+  like: Int!
+  owner: String!
+}
