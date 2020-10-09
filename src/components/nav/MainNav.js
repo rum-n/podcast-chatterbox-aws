@@ -2,25 +2,24 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './styles.css';
 import logo from './../../assets/logo.png';
+import { AmplifySignOut } from '@aws-amplify/ui-react';
 
-const Nav = () => {
+const MainNav = () => {
     
     return (
         <header>
-            <NavLink to='/'>
+            <NavLink to='/main'>
                 <div className='logo'>
                     <img src={logo} alt='Logo'/>
                 </div>
             </NavLink>
             <nav>
                 <ul className='menu'>
-                    <li><NavLink className='main-blue' to='/hosts'>For Hosts</NavLink></li>
-                    <li><NavLink className='main-blue' to='/guests'>For Guests</NavLink></li>
-                    <li><NavLink className='main-blue' to='/main'>Join Now</NavLink></li>
+                    <li><AmplifySignOut/></li>
                 </ul>
             </nav>         
         </header>
     )
 };
 
-export default Nav;
+export default MainNav;

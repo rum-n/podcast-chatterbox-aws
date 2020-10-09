@@ -7,7 +7,6 @@ import Guests from './pages/Guests';
 // import Login from './pages/Login';
 // import Signup from './pages/Signup';
 import Main from './pages/Main';
-import Nav from './components/nav/Nav';
 // import NewGuest from './components/newGuest/NewGuest';
 import GuestPage from './pages/GuestPage';
 
@@ -15,11 +14,10 @@ function App() {
 
   return (
     <Router>
-      <Nav/>
       <Switch>
         <Route path='/' exact component={Home} />
-        <Route path='/hosts' exact component={Hosts} />
-        <Route path='/guests' exact component={Guests} />
+        <Route path='/hosts' component={Hosts} />
+        <Route path='/guests' component={Guests} />
         {/* <Route path='/login' exact component={Login} /> */}
         {/* <Route path='/signup' exact component={Signup} /> */}
         <Route path='/main' exact component={Main} />

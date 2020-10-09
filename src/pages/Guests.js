@@ -3,10 +3,12 @@ import './styles.css';
 import headerImg from './../assets/flamingo2.png';
 import Footer from './../components/footer/Footer';
 import GuestReasons from './../components/guestReasons/GuestReasons';
+import Nav from './../components/nav/Nav';
 
 const Guests = () => {
   return (
     <div>
+      <Nav/>
       <div className='guests-header'>
         <img src={headerImg} alt='Graphic Flamingo'/>
       </div>

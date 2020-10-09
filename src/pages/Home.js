@@ -6,10 +6,12 @@ import Testimonial from '../components/testimonial/Testimonial';
 import headerImg from './../assets/bird2.png';
 import Footer from './../components/footer/Footer';
 import { NavLink } from 'react-router-dom';
+import Nav from './../components/nav/Nav';
 
 const Home = () => {
   return (
     <div>
+      <Nav/>
       <div className='home-header'>
         <img src={headerImg} alt='Graphic Sparrow'/>
       </div>

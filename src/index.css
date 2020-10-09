@@ -20,3 +20,10 @@ button:disabled {
 input:focus {
   border:none;
 }
+
+:root {
+  --amplify-primary-color: #EE6C4D;
+  --amplify-primary-tint: #ff7359;
+  --amplify-primary-shade: #e0573e;
+}
+

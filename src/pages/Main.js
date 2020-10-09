@@ -3,16 +3,17 @@ import React, { useState, useEffect } from 'react';
 import InsideFooter from './../components/footer/InsideFooter';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import awsconfig from './../aws-exports';
-import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
+import { withAuthenticator } from '@aws-amplify/ui-react';
 import { listGuests } from './../graphql/queries';
 import Modal from "./../components/modal/Modal";
+import MainNav from "./../components/nav/MainNav";
 // import useModal from './../useModal';
 
 Amplify.configure(awsconfig);
 
 const Main = () => {
     const [guests, setGuests] = useState([]);
-    // const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(true);
     const [isShowing, setIsShowing] = useState(false);
 
     function toggle() {
@@ -28,6 +29,7 @@ const Main = () => {
           const guestData = await API.graphql(graphqlOperation(listGuests));
           const guestList = guestData.data.listGuests.items;
           setGuests(guestList);
+          setIsLoading(false);
         } catch (error) {
           console.log('Error when fetching guests.', error);
         }
@@ -35,7 +37,7 @@ const Main = () => {
 
     return (
         <React.Fragment>
-            <AmplifySignOut/>
+            <MainNav/>
             <div className='main main-blue'>
                 <h1>Pick a category</h1>
                 <div className='categories'>
@@ -52,7 +54,8 @@ const Main = () => {
                 </div>
             </div>
                 <div className='guests-wrapper'>
-                    {guests.map(guest => (
+                    {isLoading ? <h2>Loading...</h2> : 
+                    guests.map(guest => (
                         <div key={guest.id} className='guest-card'>
                             <h2>{guest.name} <span>{guest.timezone}</span></h2>
                             <h4>{guest.title}</h4>
@@ -67,7 +70,8 @@ const Main = () => {
                             <ul>{guest.topics}</ul>
                             {/* <p onClick={toggle}>Read more</p> */}
                         </div>
-                    ))}
+                    ))
+                }
                 </div>
                 <Modal
                     isShowing={isShowing}

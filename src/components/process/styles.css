@@ -67,3 +67,9 @@
 .steps ul {
     padding: 0;
 }
+
+@media (max-width: 700px) {
+    .steps {
+        flex-direction: column;
+    }
+}

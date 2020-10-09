@@ -13,7 +13,7 @@ nav {
     padding-right: 8rem;
 }
 
-@media screen and (min-width: 851px) {
+@media (min-width: 851px) {
     .menu li {
         display: inline-block;
         font-weight: 600;
@@ -24,17 +24,23 @@ nav {
     .menu {
         font-size: 1em;
     }
+    .logo {
+        margin: 2rem 7rem;
+    }
   }
   
   /* If the screen size is 850px wide or less */
-  @media screen and (max-width: 850px) {
+  @media (max-width: 850px) {
     .menu li {
         list-style: none;
         margin-right: 20px;
+        margin-left: 0;
     }
-    
     nav {
-        padding-right: 0.5rem;
+        padding-right: 0rem;
+    }
+    .logo {
+        margin: 2rem 0rem 2rem 2rem;
     }
   }
 
@@ -44,15 +50,11 @@ nav {
     color: #293241;
 }
 
-.logo {
-    margin: 2rem 7rem;
-}
-
 .logo img{
     width: 12rem;
 }
 
-.logout-btn {
+/* .logout-btn {
     border-radius: 6px;
     width: auto;
     font-size: 1rem;
@@ -67,4 +69,4 @@ nav {
 .logout-btn:hover {
     color: #E0FBFC;
     background: #3d5a80;
-}
+} */

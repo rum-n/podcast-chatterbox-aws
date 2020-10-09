@@ -4,10 +4,12 @@ import headerImg from './../assets/giraffes2.png';
 import Footer from './../components/footer/Footer';
 import Pricing from './../components/pricing/Pricing';
 import HostReasons from '../components/hostReasons/HostReasons';
+import Nav from './../components/nav/Nav';
 
 const Hosts = () => {
   return (
     <div>
+      <Nav/>
       <div className='hosts-header'>
         <img src={headerImg} alt='Graphic Giraffes'/>
       </div>
