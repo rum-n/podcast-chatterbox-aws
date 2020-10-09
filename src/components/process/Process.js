@@ -32,7 +32,7 @@ const Process = () => {
                     </ul>
                 </div>
             </div>
-            <Link to='/signup'><button>Join Now</button></Link>
+            <Link to='/main'><button>Join Now</button></Link>
         </div>
     )
 }

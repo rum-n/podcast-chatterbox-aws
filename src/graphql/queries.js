@@ -6,11 +6,12 @@ export const getGuest = /* GraphQL */ `
     getGuest(id: $id) {
       id
       name
+      title
+      timezone
+      tags
       achievements
       topics
-      filePath
       like
-      owner
       createdAt
       updatedAt
     }
@@ -26,11 +27,12 @@ export const listGuests = /* GraphQL */ `
       items {
         id
         name
+        title
+        timezone
+        tags
         achievements
         topics
-        filePath
         like
-        owner
         createdAt
         updatedAt
       }

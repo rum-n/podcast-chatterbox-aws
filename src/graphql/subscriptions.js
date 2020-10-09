@@ -6,11 +6,12 @@ export const onCreateGuest = /* GraphQL */ `
     onCreateGuest {
       id
       name
+      title
+      timezone
+      tags
       achievements
       topics
-      filePath
       like
-      owner
       createdAt
       updatedAt
     }
@@ -21,11 +22,12 @@ export const onUpdateGuest = /* GraphQL */ `
     onUpdateGuest {
       id
       name
+      title
+      timezone
+      tags
       achievements
       topics
-      filePath
       like
-      owner
       createdAt
       updatedAt
     }
@@ -36,11 +38,12 @@ export const onDeleteGuest = /* GraphQL */ `
     onDeleteGuest {
       id
       name
+      title
+      timezone
+      tags
       achievements
       topics
-      filePath
       like
-      owner
       createdAt
       updatedAt
     }

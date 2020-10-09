@@ -9,11 +9,12 @@ export const createGuest = /* GraphQL */ `
     createGuest(input: $input, condition: $condition) {
       id
       name
+      title
+      timezone
+      tags
       achievements
       topics
-      filePath
       like
-      owner
       createdAt
       updatedAt
     }
@@ -27,11 +28,12 @@ export const updateGuest = /* GraphQL */ `
     updateGuest(input: $input, condition: $condition) {
       id
       name
+      title
+      timezone
+      tags
       achievements
       topics
-      filePath
       like
-      owner
       createdAt
       updatedAt
     }
@@ -45,11 +47,12 @@ export const deleteGuest = /* GraphQL */ `
     deleteGuest(input: $input, condition: $condition) {
       id
       name
+      title
+      timezone
+      tags
       achievements
       topics
-      filePath
       like
-      owner
       createdAt
       updatedAt
     }
