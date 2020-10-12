@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 import headerImg from './../assets/giraffes2.png';
 import Footer from './../components/footer/Footer';
-import Pricing from './../components/pricing/Pricing';
+// import Pricing from './../components/pricing/Pricing';
 import HostReasons from '../components/hostReasons/HostReasons';
 import Nav from './../components/nav/Nav';
 
@@ -19,7 +19,7 @@ const Hosts = () => {
           <button>Join Now</button>
       </div>
       <HostReasons/>
-      <Pricing/>
+      {/* <Pricing/> */}
       <Footer/>
     </div>
   );

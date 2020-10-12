@@ -40,10 +40,14 @@ hr {
         display: inline-block;
         padding: 1.5rem;
     }
-    footer p {
+    footer p, 
+    h4{
         text-align: center;
     }
     .credits {
+        text-align: center;
+    }
+    .footer-logo {
         text-align: center;
     }
   }

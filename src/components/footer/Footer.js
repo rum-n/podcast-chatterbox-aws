@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer>
-            <div>
+            <div className='footer-logo'>
                 <img src={logo} alt='Podcast Chatterbox logo'/>
                 <p>© 2020 Podcast Chatterbox. All rights reserved.</p>
             </div>

@@ -1,9 +1,9 @@
 
 import React from 'react';
 import './styles.css';
-import guestSearch from './../../assets/search.svg';
-import guestSuccess from './../../assets/success.svg';
-import guestSchedule from './../../assets/schedule.svg';
+import guestProud from './../../assets/proud.svg';
+import guestBoost from './../../assets/unicorn.svg';
+import guestNetwork from './../../assets/network.svg';
 
 const GuestReasons = () => {
     return (
@@ -12,27 +12,27 @@ const GuestReasons = () => {
             <h2>Have you ever wanted to be on TV?<br/> This is the next best thing.</h2>
             <p className='why-subtitle'>Reach a wider audience and promote yourself</p>
             <div className='why-join'>
-                <img src={guestSearch} alt="Searching for people"/>
+                <img src={guestBoost} alt="Searching for people"/>
                 <div className="why-details">
-                    <p className='title-tag' id='reason-tag'>Overview</p>
-                    <h3 className='host-reason'>Browse people who want <br/> to be on a podcast</h3>
-                    <p className='why-subtitle' id='why-details'>Every person you see on the platform created a profile because they'd like to be on a podcast.</p>
+                    <p className='title-tag' id='reason-tag'>Showcase</p>
+                    <h3 className='host-reason'>Reach a <br/>wider audience</h3>
+                    <p className='why-subtitle' id='why-details'>Building an audience is smart. Using someone else's audience is even smarter. Use the opportunity to present your product or service to podcast listeners.</p>
                 </div>
             </div>
             <div className='why-join'>
                 <div className="why-details">
-                    <p className='title-tag' id='reason-tag'>Research</p>
-                    <h3 className='host-reason'>Check out their <br/> podcast guest profile</h3>
-                    <p className='why-subtitle' id='why-details'>Read through people's proudest achievements and the past experience they'd be happy to share on your podcast.</p>
+                    <p className='title-tag' id='reason-tag'>Boost</p>
+                    <h3 className='host-reason'>Boost your <br/> personal brand</h3>
+                    <p className='why-subtitle' id='why-details'>Establish yourself as a thought leader in your field and increase your authority by speaking on a topic you know well.</p>
                 </div>
-                <img src={guestSuccess} alt="Astronaut"/>
+                <img src={guestProud} alt="Astronaut"/>
             </div>
             <div className='why-join'>
-                <img src={guestSchedule} alt="Calendar schedule"/>
+                <img src={guestNetwork} alt="Calendar schedule"/>
                 <div className="why-details">
-                    <p className='title-tag' id='reason-tag'>Connect</p>
-                    <h3 className='host-reason'>Easily reach out <br/> and schedule a time</h3>
-                    <p className='why-subtitle' id='why-details'>Connect with your potential podcast guest and set up a time to record your podcast, based on their timezone.</p>
+                    <p className='title-tag' id='reason-tag'>Network</p>
+                    <h3 className='host-reason'>Expand your <br/> personal network</h3>
+                    <p className='why-subtitle' id='why-details'>Reach out and connect with new people through a podcast's audience. After an interview, likeminded people will likely reach out to connect with you.</p>
                 </div>
             </div>
         </div>

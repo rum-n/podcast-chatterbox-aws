@@ -8,7 +8,7 @@ import Guests from './pages/Guests';
 // import Signup from './pages/Signup';
 import Main from './pages/Main';
 // import NewGuest from './components/newGuest/NewGuest';
-import GuestPage from './pages/GuestPage';
+// import GuestPage from './pages/GuestPage';
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
         {/* <Route path='/signup' exact component={Signup} /> */}
         <Route path='/main' exact component={Main} />
         {/* <Route path='/add-guest' exact component={NewGuest} /> */}
-        <Route path='/main/:id' component={GuestPage}/>
+        {/* <Route path='/main/:id' component={GuestPage}/> */}
       </Switch>
     </Router>
   );
